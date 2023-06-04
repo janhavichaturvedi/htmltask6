@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task6</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid black;
+    }
+
+    th.label-cell {
+      border-right: 1px solid black;
+    }
+
+    h1 {
+      color: blue;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <form id="form1">
+    <h1>Registration form</h1>
+    <table>
+      <tr>
+        <th class="label-cell">Firstname</th>
+        <td><input type="text" name="firstname" size="15"></td>
+      </tr>
+      <tr>
+        <th class="label-cell">Lastname:</th>
+        <td><input type="text" name="lastname" size="15"></td>
+      </tr>
+      <tr>
+        <th class="label-cell">Email:</th>
+        <td><input type="text" name="email" size="15"></td>
+      </tr>
+      <tr>
+        <th class="label-cell">Gender:</th>
+        <td>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="other"> Other
+        </td>
+      </tr>
+      <tr>
+        <th class="label-cell">Phone No.:</th>
+        <td><input type="text" name="phone" size="15"></td>
+      </tr>
+      <tr>
+        <th class="label-cell">Address:</th>
+        <td><textarea cols="80" rows="5"></textarea></td>
+      </tr>
+      <tr>
+        <th class="label-cell">State:</th>
+        <td><input type="text" name="state"></td>
+      </tr>
+      <tr>
+        <th class="label-cell">Choose your country:</th>
+        <td>
+          <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+            <option value="europe">Europe</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th class="label-cell">Languages Known:</th>
+        <td>
+          <input type="checkbox" name="hindi"> Hindi
+          <input type="checkbox" name="english"> English
+          <input type="checkbox" name="kannada"> Kannada
+          <input type="checkbox" name="telugu"> Telugu
+        </td>
+      </tr>
+      <tr>
+        <th class="label-cell"></th>
+        <td><input type="checkbox" name="declare"> Hereby I declare all the given details are true</td>
+      </tr>
+      <tr>
+        <th class="label-cell"></th>
+        <td><button type="button" name="Register">Register</button></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
